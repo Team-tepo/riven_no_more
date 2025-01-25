@@ -1,9 +1,8 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import NarrativeWindow from '../components/NarrativeWindow.vue'
+
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+    <NarrativeWindow/>
 </template>
