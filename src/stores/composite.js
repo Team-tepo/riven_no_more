@@ -1,6 +1,6 @@
 import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
-import * as narr from  './narrative.json'
+import * as narr from  './dummy.json'
 
 export const UseCompositeFunc = defineStore('narrative', () => {
     // todo replace with comp function
