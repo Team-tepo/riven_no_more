@@ -1,10 +1,10 @@
 <script setup>
-import  narr from '../stores/dummy.json'
+import  narr from '../stores/dummy.json' // update to composite.json in production
+import { computed } from 'vue';
 import {UseCompositeFunc} from '../stores/composite'
 const compositeStore = UseCompositeFunc();
-const node = compositeStore.position;
+const node = computed(() => compositeStore.position);
 const travel_to = compositeStore.step;
-console.log('this is from narr', narr[node].answers[0].ans)
 
 
 
@@ -12,14 +12,12 @@ console.log('this is from narr', narr[node].answers[0].ans)
 
 <template>
       <div>
-    <!-- <p>Counter: {{ counterStore.count }}</p>
-    <button @click="increment">Increment</button>
-    <button @click="decrement">Decrement</button>
-    <button @click="reset">Reset</button> -->
 
     <h1 >{{ narr[node].narr }}</h1>
-    <div class="btn-group" role="group" aria-label="game choice field" v-for="node in narr[node].answers"> 
-    <button type="button" class="btn">{{ node.ans }}</button>
+    <div class="btn-group" role="group" aria-label="game choice field" v-for="item in narr[node].answers"> 
+    <button type="button" class="btn"
+      @click="travel_to(item.dir)"
+    >{{ item.ans }}</button>
     </div>
   </div>
 </template>

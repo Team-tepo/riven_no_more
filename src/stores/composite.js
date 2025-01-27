@@ -5,6 +5,8 @@ export const UseCompositeFunc = defineStore('narrative', () => {
     const position = ref(0)
     function step(node_id){
       position.value= node_id
+      console.log( 'should go to ', node_id, 'is at', position.value)
+
     }
   return { position, step }
 })
