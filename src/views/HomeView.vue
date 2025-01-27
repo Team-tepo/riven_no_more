@@ -7,4 +7,5 @@ import NarrativeWindow from '../components/NarrativeWindow.vue'
 <template>
     <NarrativeWindow/>
     <!-- <EndScreen1/> -->
+     
 </template>
