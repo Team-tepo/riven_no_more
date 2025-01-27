@@ -2,5 +2,7 @@
 </script>
 
 <template>
-    hi
+    
+    <button class="btn btn-primary">hi
+    </button>
 </template>
