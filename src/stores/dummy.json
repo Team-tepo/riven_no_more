@@ -1,6 +1,98 @@
 [
-    {   "node_id": 1,
+    {
+        "node_id": 1,
         "narr": "first question",
-    "answers": [{"ans":"1", "dir":"2"},{"ans":"2", "dir":"3"}]
-}
+        "answers": [
+            {"ans": "Option A", "dir": 2},
+            {"ans": "Option B", "dir": 3}
+        ]
+    },
+    {
+        "node_id": 2,
+        "narr": "second question",
+        "answers": [
+            {"ans": "Choice X", "dir": 4},
+            {"ans": "Choice Y", "dir": 5}
+        ]
+    },
+    {
+        "node_id": 3,
+        "narr": "third question",
+        "answers": [
+            {"ans": "Select 1", "dir": 6},
+            {"ans": "Select 2", "dir": 7}
+        ]
+    },
+    {
+        "node_id": 4,
+        "narr": "fourth question",
+        "answers": [
+            {"ans": "Yes", "dir": 8},
+            {"ans": "No", "dir": 9}
+        ]
+    },
+    {
+        "node_id": 5,
+        "narr": "fifth question",
+        "answers": [
+            {"ans": "True", "dir": 9},
+            {"ans": "False", "dir": 10}
+        ]
+    },
+    {
+        "node_id": 6,
+        "narr": "sixth question",
+        "answers": [
+            {"ans": "Go left", "dir": 1},
+            {"ans": "Go right", "dir": 4}
+        ]
+    },
+    {
+        "node_id": 7,
+        "narr": "seventh question",
+        "answers": [
+            {"ans": "Stay", "dir": 5},
+            {"ans": "Move forward", "dir": 8}
+        ]
+    },
+    {
+        "node_id": 8,
+        "narr": "eighth question",
+        "answers": [
+            {"ans": "Explore the cave", "dir": 10},
+            {"ans": "Return to camp", "dir": 2}
+        ]
+    },
+    {
+        "node_id": 9,
+        "narr": "ninth question",
+        "answers": [
+            {"ans": "Fight the dragon", "dir": 3},
+            {"ans": "Befriend the dragon", "dir": 6}
+        ]
+    },
+    {
+        "node_id": 10,
+        "narr": "tenth question",
+        "answers": [
+            {"ans": "Celebrate victory", "dir": 11},
+            {"ans": "Reflect on journey", "dir": 12}
+        ]
+    },
+    {
+        "node_id": 11,
+        "narr": "victory end",
+        "answers": [
+            {"ans": "Celebrate victory", "dir": 7},
+            {"ans": "Reflect on journey", "dir": 1}
+        ]
+    },
+    {
+        "node_id": 12,
+        "narr": "reflect end",
+        "answers": [
+            {"ans": "Celebrate victory", "dir": 7},
+            {"ans": "Reflect on journey", "dir": 1}
+        ]
+    }
 ]
