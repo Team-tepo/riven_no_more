@@ -4,7 +4,8 @@
         "narr": "first question",
         "answers": [
             {"ans": "Option A", "dir": 2},
-            {"ans": "Option B", "dir": 3}
+            {"ans": "Option B", "dir": 3},
+            {"ans": "Option c", "dir": 4}
         ]
     },
     {
