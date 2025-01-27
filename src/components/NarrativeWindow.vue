@@ -12,13 +12,17 @@ const travel_to = compositeStore.step;
 
 <template>
       <div>
+        <transition>
+          <div :key="node">
 
-    <h1 >{{ narr[node].narr }}</h1>
-    <div class="btn-group" role="group" aria-label="game choice field" v-for="item in narr[node].answers"> 
-    <button type="button" class="btn"
-      @click="travel_to(item.dir)"
-    >{{ item.ans }}</button>
-    </div>
+            <h1  >{{ narr[node].narr }}</h1>
+            <div class="btn-group" role="group" aria-label="game choice field" v-for="item in narr[node].answers"> 
+              <button type="button" class="btn"
+              @click="travel_to(item.dir)"
+              >{{ item.ans }}</button>
+            </div>
+          </div>
+        </transition>
   </div>
 </template>
 <style scoped>
