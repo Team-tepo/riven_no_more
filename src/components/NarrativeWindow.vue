@@ -1,5 +1,7 @@
 <script setup>
 import  narr from '../stores/dummy.json' // update to composite.json in production
+import EndScreen1 from './EndScreen1.vue'
+
 import { computed } from 'vue';
 import {UseCompositeFunc} from '../stores/composite'
 const compositeStore = UseCompositeFunc();
@@ -11,18 +13,26 @@ const travel_to = compositeStore.step;
 </script>
 
 <template>
-      <div>
-        <transition>
-          <div :key="node">
-
-            <h1  >{{ narr[node].narr }}</h1>
-            <div class="btn-group" role="group" aria-label="game choice field" v-for="item in narr[node].answers"> 
-              <button type="button" class="btn"
+  <!-- update this for prod to actual node id -->
+  <div v-if="node==11"> 
+    <EndScreen1/>
+  </div>
+  <div v-if="node==12">
+    <p>end 2</p>   
+  </div>
+  <div v-if="node<=10">   
+    <div>
+      <h1  >{{ narr[node].narr }}</h1>
+      <transition>
+        <div>
+          <div class="btn-group" :key="node" role="group" aria-label="game choice field" v-for="item in narr[node].answers"> 
+            <button type="button" class="btn"
               @click="travel_to(item.dir)"
               >{{ item.ans }}</button>
             </div>
           </div>
         </transition>
+      </div>
   </div>
 </template>
 <style scoped>
