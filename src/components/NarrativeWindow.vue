@@ -20,7 +20,7 @@ const travel_to = compositeStore.step;
   <!-- <div v-if="node==12">
     <p>end 2</p>   
   </div> -->
-  <div v-if="node>0&&node<=10">   
+  <div v-if="node>0">   
     <div>
       <h1  >{{ narr[node].narr }}</h1>
       <transition>
