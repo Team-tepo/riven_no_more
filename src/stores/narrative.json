@@ -1,3 +1,12 @@
 [
-    {}
+    {
+        "node_id": 1,
+        "narr": "I walk the path to...",
+        "answers": [
+            {"ans": "riches", "dir": 2},
+            {"ans": "strength", "dir": 2},
+            {"ans": "prosperity", "dir": 2},
+            {"ans": "a better tomorrow", "dir": 3}
+        ]
+    }
 ]

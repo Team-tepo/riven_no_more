@@ -1,5 +1,5 @@
 <script setup>
-import  narr from '../stores/dummy.json' // update to composite.json in production
+import  narr from '../stores/narrative.json' 
 import EndScreen1 from './EndScreen1.vue'
 
 import { computed } from 'vue';
