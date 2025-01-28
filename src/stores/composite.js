@@ -1,12 +1,14 @@
 import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
+import  narr from '../stores/narrative.json' 
+
 
 export const UseCompositeFunc = defineStore('narrative', () => {
-    const position = ref(0)
-    function step(node_id){
-      position.value= node_id
-      console.log( 'should go to ', node_id, 'is at', position.value)
+    const position = ref(1)
+    function step(idnum){
+      position.value= narr.findIndex(item=>item.node_id==idnum)
+      console.log( 'should go to ', idnum, 'is at', position.value)
 
     }
-  return { position, step }
+  return { position, step, narr }
 })

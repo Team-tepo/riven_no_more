@@ -1,12 +1,68 @@
 [
     {
+        "node_id": 0,
+        "narr": " END contact us",
+        "answers": [
+        ]
+    },
+    {
+        "node_id": 1,
+        "narr": "I walk the path to...",
+        "answers": [
+            {"ans": "riches", "dir": 2000},
+            {"ans": "strength", "dir": 3000},
+            {"ans": "prosperity", "dir": 4000},
+            {"ans": "a better tomorrow", "dir": 5000}
+        ]
+    },
+    {
+        "node_id": 2000,
+        "narr": "I have taken flight under the power of my",
+        "answers": [
+            {"ans": "riches", "dir": 2},
+            {"ans": "strength", "dir": 3},
+            {"ans": "prosperity", "dir": 4},
+            {"ans": "a better tomorrow", "dir": 5}
+        ]
+    },
+    {
+        "node_id": 3,
+        "narr": "WIP strength",
+        "answers": [
+            {"ans": "riches", "dir": 2},
+            {"ans": "strength", "dir": 3},
+            {"ans": "prosperity", "dir": 4},
+            {"ans": "a better tomorrow", "dir": 5}
+        ]
+    },
+    {
+        "node_id": 4,
+        "narr": "WIP prosperity",
+        "answers": [
+            {"ans": "riches", "dir": 2},
+            {"ans": "strength", "dir": 3},
+            {"ans": "prosperity", "dir": 4},
+            {"ans": "a better tomorrow", "dir": 5}
+        ]
+    },
+    {
+        "node_id": 5,
+        "narr": "WIP a better..",
+        "answers": [
+            {"ans": "riches", "dir": 2},
+            {"ans": "strength", "dir": 3},
+            {"ans": "prosperity", "dir": 4},
+            {"ans": "a better tomorrow", "dir": 5}
+        ]
+    },
+    {
         "node_id": 1,
         "narr": "I walk the path to...",
         "answers": [
             {"ans": "riches", "dir": 2},
-            {"ans": "strength", "dir": 2},
-            {"ans": "prosperity", "dir": 2},
-            {"ans": "a better tomorrow", "dir": 3}
+            {"ans": "strength", "dir": 3},
+            {"ans": "prosperity", "dir": 4},
+            {"ans": "a better tomorrow", "dir": 5}
         ]
     }
 ]

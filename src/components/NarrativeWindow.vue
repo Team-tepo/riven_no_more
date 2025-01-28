@@ -1,11 +1,11 @@
 <script setup>
-import  narr from '../stores/narrative.json' 
 import EndScreen1 from './EndScreen1.vue'
 
 import { computed } from 'vue';
 import {UseCompositeFunc} from '../stores/composite'
 const compositeStore = UseCompositeFunc();
 const node = computed(() => compositeStore.position);
+const narr = computed(()=>compositeStore.narr)
 const travel_to = compositeStore.step;
 
 
@@ -14,13 +14,13 @@ const travel_to = compositeStore.step;
 
 <template>
   <!-- update this for prod to actual node id -->
-  <div v-if="node==11"> 
+  <div v-if="node==0"> 
     <EndScreen1/>
   </div>
-  <div v-if="node==12">
+  <!-- <div v-if="node==12">
     <p>end 2</p>   
-  </div>
-  <div v-if="node<=10">   
+  </div> -->
+  <div v-if="node>0&&node<=10">   
     <div>
       <h1  >{{ narr[node].narr }}</h1>
       <transition>
