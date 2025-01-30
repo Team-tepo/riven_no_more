@@ -25,10 +25,14 @@ const travel_to = compositeStore.step;
       <h1  >{{ narr[node].narr }}</h1>
       <transition>
         <div>
-          <div class="btn-group" :key="node" role="group" aria-label="game choice field" v-for="item in narr[node].answers"> 
-            <button type="button" class="btn"
+          <div class="btn-group"  role="group" :key="node" aria-label="game choice field" > 
+            <button type="button" class="btn  text-info btn-outline-secondary"
+             v-for="item in narr[node].answers"
               @click="travel_to(item.dir)"
-              >{{ item.ans }}</button>
+              ><h4>    
+                {{ item.ans }}
+              </h4>
+            </button>
             </div>
           </div>
         </transition>
