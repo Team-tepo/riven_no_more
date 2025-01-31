@@ -2,8 +2,8 @@
   <div class="about">
     <div>
     <h1>want to get a hold of us?</h1>
-      <p><a href="tel:+27761235651">whatsapp us</a></p>
-      <p><a href="mailto: delta_technologies@outlook.com?subject=I'd love to get in touch for a project">email us</a></p>
+      <p><a href="tel:+27761235651" target="_blank">whatsapp us</a></p>
+      <p><a href="mailto: delta_technologies@outlook.com?subject=I'd love to get in touch for a project" target="_blank">email us</a></p>
 
     </div>
 
