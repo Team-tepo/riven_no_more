@@ -1,3 +1,90 @@
 [
-    {}
+    {
+        "node_id": 0,
+        "narr": "contact us",
+        "answers": [
+        ]
+    },
+    
+    {
+        "node_id": 2000,
+        "narr": "I have taken flight under the power of my",
+        "answers": [
+            {"ans": "luck", "dir": 2002},
+            {"ans": "determination", "dir": 2003}
+        ]
+    },
+    {
+        "node_id": 2002,
+        "narr": "I have cast the die",
+        "answers": [
+            {"ans": "cry out 'Let me have it!'", "dir": 2004},
+            {"ans": "serenity", "dir": 2005},
+            {"ans": "anger", "dir": 2006}
+        ]
+    },
+    {
+        "node_id": 2003,
+        "narr": "my will was strong enough to push through all that was in my way but when I stopped to look around I saw others breaking through faster",
+        "answers": [
+            {"ans": "if only I had an undying will", "dir": 2002},
+            {"ans": "if only I had others to rely on", "dir": 2003}
+        ]
+    },
+    {
+        "node_id": 2004,
+        "narr": "'oh no, you have to earn it, kiddo'",
+        "answers": [
+            {"ans": "I walk the path to...", "dir": 1}
+        ]
+    },
+    {
+        "node_id": 2005,
+        "narr": "I choose to remember the peace, it was not always peaceful but I will remember it as such, it will be as such in the future too",
+        "answers": [
+            {"ans": "stay with me", "dir": 2007},
+            {"ans": "enforce", "dir": 2008},
+            {"ans": "disaster strikes", "dir":2009}
+        ]
+    },
+    {
+        "node_id": 3000,
+        "narr": "WIP strength",
+        "answers": [
+            {"ans": "riches", "dir": 2},
+            {"ans": "strength", "dir": 3},
+            {"ans": "prosperity", "dir": 4},
+            {"ans": "a better tomorrow", "dir": 5}
+        ]
+    },
+    {
+        "node_id": 4000,
+        "narr": "WIP prosperity",
+        "answers": [
+            {"ans": "riches", "dir": 2},
+            {"ans": "strength", "dir": 3},
+            {"ans": "prosperity", "dir": 4},
+            {"ans": "a better tomorrow", "dir": 5}
+        ]
+    },
+    {
+        "node_id": 5000,
+        "narr": "a better tomorrow",
+        "answers": [
+            {"ans": "riches", "dir": 2},
+            {"ans": "strength", "dir": 3},
+            {"ans": "prosperity", "dir": 4},
+            {"ans": "a better tomorrow", "dir": 5}
+        ]
+    },
+    {
+        "node_id": 1,
+        "narr": "I walk the path to...",
+        "answers": [
+            {"ans": "riches", "dir": 2000},
+            {"ans": "strength", "dir": 3000},
+            {"ans": "prosperity", "dir": 4000},
+            {"ans": "a better tomorrow", "dir": 5000}
+        ]
+    }
 ]

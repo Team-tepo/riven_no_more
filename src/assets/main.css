@@ -1,5 +1,25 @@
 @import './base.css';
+*{
+  /* font-family: "Nothing You Could Do", serif;
+  font-weight: 400;
+  font-style: normal; */
+  font-family: "Grape Nuts", serif;
+  font-weight: 400;
+  font-style: normal;
+  /* background-color: #212529; */
+  /* color: #f8f9fa; */
+  animation: fadeIn 1.4s ease-in-out;
+}
 
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 #app {
   max-width: 1280px;
   margin: 0 auto;
