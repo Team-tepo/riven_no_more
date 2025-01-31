@@ -14,13 +14,13 @@ const travel_to = compositeStore.step;
 
 <template>
   <!-- update this for prod to actual node id -->
-  <div v-if="node==0"> 
+  <!-- <div v-if="node==0"> 
     <EndScreen1/>
-  </div>
+  </div> -->
   <!-- <div v-if="node==12">
     <p>end 2</p>   
   </div> -->
-  <div v-if="node>0">   
+  <!-- <div v-if="node>0">    -->
     <div>
       <h1  >{{ narr[node].narr }}</h1>
       <transition>
@@ -37,7 +37,7 @@ const travel_to = compositeStore.step;
           </div>
         </transition>
       </div>
-  </div>
+  <!-- </div> -->
 </template>
 <style scoped>
 .typewriter {
