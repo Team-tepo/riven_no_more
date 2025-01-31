@@ -2,6 +2,24 @@
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 
+import { useRouter } from "vue-router";
+import { computed, watch } from 'vue';
+import {UseCompositeFunc} from './stores/composite'
+
+
+const compositeStore = UseCompositeFunc();
+const router = useRouter();
+const node = computed(() => compositeStore.position);
+watch(
+   node,
+  (newValue) => {
+    if (newValue === 9) {
+      console.log('should reroute')
+      router.push("/about"); 
+    }
+  }
+);
+
 </script>
 
 <template>
@@ -9,7 +27,13 @@ import HelloWorld from './components/HelloWorld.vue'
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
   <!-- .images { width: 15%; aspect-ratio: 4/3; object-fit: contain; mix-blend-mod color-burn; -->
     <div class="wrapper">
-      <HelloWorld msg="Riven no more" />
+      <div v-if="node==9">
+        <HelloWorld msg="Luminary Vangaurd" />
+      </div>
+      <div v-else>
+        <HelloWorld  msg="Riven no more" />
+
+      </div>
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
