@@ -24,8 +24,7 @@ watch(
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-  <!-- .images { width: 15%; aspect-ratio: 4/3; object-fit: contain; mix-blend-mod color-burn; -->
+    <!-- <img alt="Vue logo" class="logo" src="@/assets/ロゴ.jpg" width="125" height="125" /> -->
     <div class="wrapper">
       <div v-if="node==9">
         <HelloWorld msg="Luminary Vangaurd" />
@@ -54,6 +53,8 @@ header {
 .logo {
   display: block;
   margin: 0 auto 2rem;
+  object-fit: contain; 
+  mix-blend-mode :color-burn;
 }
 
 nav {
